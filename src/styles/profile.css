@@ -1,0 +1,104 @@
+.profile-wrapper {
+  min-height: 80vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  background: #f4f7f6;
+}
+
+.profile-card {
+  background: white;
+  width: 100%;
+  max-width: 600px;
+  border-radius: 20px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+  overflow: hidden;
+}
+
+.profile-header {
+  background: linear-gradient(135deg, #2ecc71 0%, #27ae60 100%);
+  padding: 40px 20px;
+  text-align: center;
+  color: white;
+}
+
+.avatar-section {
+  position: relative;
+  display: inline-block;
+}
+
+.default-avatar {
+  font-size: 80px;
+  margin-bottom: 10px;
+}
+
+.status-dot {
+  position: absolute;
+  bottom: 15px;
+  right: 5px;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  border: 3px solid white;
+}
+
+.status-dot.green { background: #2ecc71; }
+.status-dot.gold { background: #f1c40f; }
+
+.profile-body {
+  padding: 30px;
+}
+
+.info-section h3, .actions-section h3 {
+  font-size: 1.1rem;
+  color: #333;
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.info-item {
+  margin-bottom: 15px;
+  border-bottom: 1px solid #eee;
+  padding-bottom: 10px;
+}
+
+.info-item label {
+  display: block;
+  font-size: 0.8rem;
+  color: #888;
+  text-transform: uppercase;
+}
+
+.info-item span {
+  font-weight: 500;
+  color: #2c3e50;
+}
+
+.action-buttons {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+}
+
+.p-action-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  padding: 12px;
+  border: none;
+  border-radius: 10px;
+  background: #f8f9fa;
+  color: #333;
+  text-decoration: none;
+  font-weight: 500;
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+.p-action-btn:hover { background: #e9ecef; }
+.p-action-btn.logout { background: #fff5f5; color: #e74c3c; grid-column: span 2; }
+.p-action-btn.logout:hover { background: #fee2e2; }

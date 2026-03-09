@@ -1,0 +1,137 @@
+/* Container jo poore screen ko cover karega */
+.auth-wrapper {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(135deg, #f1f8e9 0%, #dcedc8 100%); /* Light Green Gradient */
+  padding: 20px;
+  font-family: 'Poppins', sans-serif;
+}
+
+/* Card Styling */
+.auth-card {
+  background: #ffffff;
+  padding: 40px;
+  border-radius: 20px;
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 420px;
+  transition: transform 0.3s ease;
+}
+
+.auth-card:hover {
+  transform: translateY(-5px);
+}
+
+/* Header Section (Icon + Title) */
+.auth-header {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.icon-box {
+  background: #2e7d32; /* PureRoot Dark Green */
+  color: white;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 15px;
+  font-size: 24px;
+  box-shadow: 0 4px 10px rgba(46, 125, 50, 0.3);
+}
+
+.auth-header h2 {
+  color: #1b5e20;
+  font-weight: 700;
+  margin-bottom: 5px;
+}
+
+.auth-header p {
+  color: #666;
+  font-size: 0.9rem;
+}
+
+/* Input Fields Styling */
+.input-group-custom {
+  position: relative;
+  margin-bottom: 20px;
+}
+
+.input-icon {
+  position: absolute;
+  left: 15px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #2e7d32;
+  font-size: 18px;
+}
+
+.auth-card input, 
+.auth-card select {
+  width: 100%;
+  padding: 12px 15px 12px 45px;
+  border: 2px solid #e0e0e0;
+  border-radius: 10px;
+  font-size: 16px;
+  background-color: #f9f9f9;
+  transition: all 0.3s ease;
+  outline: none;
+}
+
+.auth-card input:focus, 
+.auth-card select:focus {
+  border-color: #2e7d32;
+  background-color: #fff;
+  box-shadow: 0 0 8px rgba(46, 125, 50, 0.15);
+}
+
+/* Button Styling */
+.auth-btn {
+  width: 100%;
+  padding: 14px;
+  background: #2e7d32;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  font-weight: 600;
+  font-size: 16px;
+  letter-spacing: 1px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  margin-top: 10px;
+}
+
+.auth-btn:hover {
+  background: #1b5e20;
+  box-shadow: 0 5px 15px rgba(27, 94, 32, 0.3);
+}
+
+/* Footer (Links) */
+.auth-footer {
+  text-align: center;
+  margin-top: 25px;
+  font-size: 0.9rem;
+  color: #666;
+}
+
+.auth-footer a {
+  color: #2e7d32;
+  text-decoration: none;
+  font-weight: 600;
+  margin-left: 5px;
+}
+
+.auth-footer a:hover {
+  text-decoration: underline;
+}
+
+/* Mobile Responsive */
+@media (max-width: 480px) {
+  .auth-card {
+    padding: 25px;
+  }
+}

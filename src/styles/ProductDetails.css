@@ -1,0 +1,260 @@
+/* Container and Wrapper */
+.product-details-container {
+    padding: 120px 8% 60px; /* Navbar space */
+    background-color: #fdfdfd;
+    min-height: 100vh;
+}
+
+.details-wrapper {
+    display: grid;
+    grid-template-columns: 1.1fr 0.9fr; /* Image section ko thoda bada rakha hai */
+    gap: 60px;
+    align-items: start;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* --- Left Side: Image Section (Updated) --- */
+.details-image-section {
+    position: sticky;
+    top: 100px;
+}
+
+.image-card-eco {
+    background: #fff;
+    padding: 15px;
+    border-radius: 24px;
+    border: 1px solid #f0f0f0;
+    position: relative; /* Badge positioning ke liye */
+    overflow: hidden;
+    box-shadow: 0 10px 40px rgba(0,0,0,0.04);
+}
+
+.main-product-image-eco {
+    width: 100%;
+    height: auto;
+    max-height: 550px;
+    object-fit: contain;
+    border-radius: 15px;
+    transition: transform 0.6s cubic-bezier(0.33, 1, 0.68, 1);
+}
+
+.image-card-eco:hover .main-product-image-eco {
+    transform: scale(1.03);
+}
+
+/* 🌿 NEW: Side-Ribbon Eco Score (Image ko clear rakhne ke liye) */
+.eco-side-ribbon {
+    position: absolute;
+    left: 0;
+    top: 40px;
+    padding: 15px 10px;
+    border-radius: 0 12px 12px 0;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    z-index: 10;
+    box-shadow: 4px 4px 15px rgba(0,0,0,0.15);
+    backdrop-filter: blur(4px);
+}
+
+.ribbon-text {
+    writing-mode: vertical-rl; /* Text ko vertical karta hai */
+    text-orientation: mixed;
+    font-size: 0.8rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+}
+
+.ribbon-icon {
+    font-size: 1.2rem;
+}
+
+/* --- Right Side: Info Section --- */
+.details-cat-tag {
+    color: #27ae60;
+    text-transform: uppercase;
+    font-weight: 700;
+    letter-spacing: 1.5px;
+    font-size: 0.8rem;
+    background: #eafaf1;
+    padding: 4px 12px;
+    border-radius: 4px;
+}
+
+.details-title {
+    font-size: 2.8rem;
+    color: #1b4332;
+    margin: 15px 0 10px;
+    line-height: 1.2;
+}
+
+.details-price-tag {
+    font-size: 2.2rem;
+    font-weight: 800;
+    color: #2d3436;
+    margin-bottom: 25px;
+}
+
+/* Sustainability Box */
+.sustainability-box {
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.03);
+}
+
+.sustainability-box:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 6px 20px rgba(0,0,0,0.06);
+}
+
+/* Progress Bar */
+.progress-bar-bg {
+    background: #e2e8f0;
+    height: 10px;
+    border-radius: 10px;
+    overflow: hidden;
+    margin-bottom: 12px;
+}
+
+.progress-bar-fill {
+    transition: width 1.5s cubic-bezier(0.1, 0.42, 0.41, 1);
+    box-shadow: 0 0 10px rgba(34, 197, 94, 0.3);
+}
+
+/* Highlights Grid */
+.details-highlights {
+    display: grid;
+    grid-template-columns: 1fr; /* Details ke liye single column clean lagta hai */
+    gap: 12px;
+    margin: 25px 0;
+}
+
+.highlight-item {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    background: #f9f9f9;
+    padding: 14px 18px;
+    border-radius: 12px;
+    color: #2d6a4f;
+    font-size: 0.95rem;
+    border: 1px solid #f0f0f0;
+}
+
+.highlight-item svg {
+    font-size: 1.2rem;
+    flex-shrink: 0;
+}
+
+/* Description */
+.details-description h3 {
+    font-size: 1.3rem;
+    margin-bottom: 12px;
+    color: #1b4332;
+    border-bottom: 2px solid #f0fdf4;
+    display: inline-block;
+    padding-bottom: 5px;
+}
+
+.details-description p {
+    line-height: 1.7;
+    color: #555;
+    margin-bottom: 35px;
+}
+
+/* Actions */
+.details-actions {
+    display: flex;
+    gap: 15px;
+    margin-bottom: 40px;
+}
+
+.buy-now-btn {
+    flex: 2;
+    background: #1b4332;
+    color: white;
+    border: none;
+    padding: 18px;
+    border-radius: 12px;
+    font-size: 1.1rem;
+    font-weight: 700;
+    cursor: pointer;
+    transition: 0.3s;
+    box-shadow: 0 4px 15px rgba(27, 67, 50, 0.2);
+}
+
+.add-to-cart-secondary {
+    flex: 1;
+    background: white;
+    color: #1b4332;
+    border: 2px solid #1b4332;
+    padding: 18px;
+    border-radius: 12px;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.buy-now-btn:hover {
+    background: #2d6a4f;
+    transform: translateY(-2px);
+}
+
+.add-to-cart-secondary:hover {
+    background: #f1f8e9;
+    transform: translateY(-2px);
+}
+
+/* Trust Badges */
+.trust-badges p {
+    margin-bottom: 8px;
+    font-weight: 500;
+}
+
+/* --- Responsive Design --- */
+@media (max-width: 1024px) {
+    .details-wrapper { gap: 30px; }
+    .details-title { font-size: 2.2rem; }
+}
+
+@media (max-width: 900px) {
+    .product-details-container { padding-top: 100px; }
+    .details-wrapper { grid-template-columns: 1fr; }
+    .details-image-section { position: relative; top: 0; }
+    .main-product-image-eco { height: auto; max-height: 400px; }
+    .details-title { font-size: 2rem; }
+    .details-actions { flex-direction: column; }
+}
+
+/* Loader Styling */
+.details-loader {
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    font-weight: bold;
+    color: #2d6a4f;
+}
+
+.details-loader span {
+    width: 40px;
+    height: 40px;
+    border: 4px solid #f3f3f3;
+    border-top: 4px solid #2d6a4f;
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}

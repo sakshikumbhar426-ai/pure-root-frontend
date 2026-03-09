@@ -1,0 +1,166 @@
+.add-product-wrapper {
+  padding: 50px 20px;
+  background-color: #f4f7f5;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+}
+
+.add-product-card {
+  background: #ffffff;
+  width: 100%;
+  max-width: 900px;
+  border-radius: 15px;
+  padding: 40px;
+  border: none;
+}
+
+.card-header-eco {
+  text-align: center;
+  margin-bottom: 35px;
+}
+
+.eco-icon {
+  font-size: 2.5rem;
+  color: #198754;
+  margin-bottom: 10px;
+}
+
+.form-grid {
+  display: grid;
+  grid-template-columns: 1.2fr 1fr;
+  gap: 40px;
+}
+
+.input-group-eco {
+  margin-bottom: 20px;
+}
+
+.input-group-eco label {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-weight: 600;
+  margin-bottom: 8px;
+  color: #2c3e50;
+  font-size: 0.9rem;
+}
+
+.input-group-eco input, 
+.input-group-eco select {
+  width: 100%;
+  padding: 12px 15px;
+  border: 1px solid #ced4da;
+  border-radius: 8px;
+  transition: 0.3s;
+}
+
+.input-group-eco input:focus {
+  border-color: #198754;
+  box-shadow: 0 0 0 0.2rem rgba(25, 135, 84, 0.1);
+  outline: none;
+}
+
+.row-eco {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 15px;
+}
+
+/* Image Upload Area */
+.image-dropzone {
+  border: 2px dashed #198754;
+  border-radius: 12px;
+  height: 250px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #f9fbf9;
+  cursor: pointer;
+  overflow: hidden;
+  transition: 0.3s;
+}
+
+.image-dropzone:hover {
+  background: #f1f8f4;
+}
+
+.dropzone-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #6c757d;
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.upload-icon {
+  font-size: 3rem;
+  margin-bottom: 10px;
+  color: #198754;
+}
+
+.img-preview-eco {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.eco-submit-btn {
+  width: 100%;
+  margin-top: 25px;
+  padding: 15px;
+  background: #198754;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  font-weight: 700;
+  font-size: 1.1rem;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.eco-submit-btn:hover {
+  background: #157347;
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(25, 135, 84, 0.3);
+}
+
+@media (max-width: 768px) {
+  .form-grid {
+    grid-template-columns: 1fr;
+  }
+}
+/* Geolocation Button */
+.geo-btn {
+    background: #e8f5e9;
+    border: 1px solid #2e7d32;
+    color: #2e7d32;
+    padding: 0 15px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.2s;
+}
+
+.geo-btn:hover {
+    background: #2e7d32;
+    color: white;
+}
+
+.input-group-eco select {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: white;
+    cursor: pointer;
+}
+
+/* Success text for coordinates */
+small {
+    display: block;
+    margin-top: 5px;
+    font-weight: 500;
+}

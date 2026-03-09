@@ -1,0 +1,42 @@
+.container {
+  padding: 30px;
+}
+
+h1, h2 {
+  color: #2e7d32;
+  margin-bottom: 20px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  background: #fff;
+}
+
+th {
+  background: #2e7d32;
+  color: white;
+  padding: 12px;
+}
+
+td {
+  padding: 12px;
+  text-align: center;
+  border-bottom: 1px solid #ddd;
+}
+
+button {
+  padding: 6px 12px;
+  border: none;
+  border-radius: 4px;
+}
+
+.delete-btn {
+  background: #c62828;
+  color: white;
+}
+
+.approve-btn {
+  background: #2e7d32;
+  color: white;
+}

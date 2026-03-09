@@ -1,0 +1,81 @@
+/* login.css */
+
+.login-wrapper {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(135deg, #f0f4f1 0%, #d9e2dc 100%); /* Slight green tint for Eco theme */
+  padding: 20px;
+}
+
+.login-card {
+  background: #ffffff;
+  border-radius: 20px;
+  max-width: 400px;
+  width: 100%;
+  border: none;
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1) !important;
+}
+
+.icon-box-login {
+  width: 60px;
+  height: 60px;
+  background: #198754; /* Theme Green */
+  color: white;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+}
+
+.input-group-custom {
+  position: relative;
+}
+
+.input-icon {
+  position: absolute;
+  left: 15px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #6c757d;
+  z-index: 10;
+}
+
+.form-control-custom {
+  padding-left: 45px !important;
+  height: 55px;
+  border-radius: 12px !important;
+  border: 1px solid #dee2e6;
+  font-size: 16px;
+  width: 100%;
+  transition: all 0.3s ease;
+}
+
+.form-control-custom:focus {
+  outline: none;
+  border-color: #198754;
+  box-shadow: 0 0 0 0.2rem rgba(25, 135, 84, 0.1);
+}
+
+.login-btn-professional {
+  background: #198754;
+  color: white;
+  height: 55px;
+  font-weight: 600;
+  border-radius: 12px;
+  letter-spacing: 0.5px;
+  border: none;
+  transition: all 0.3s ease;
+}
+
+.login-btn-professional:hover {
+  background: #157347;
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(25, 135, 84, 0.3);
+}
+
+.text-success {
+  color: #198754 !important;
+}
