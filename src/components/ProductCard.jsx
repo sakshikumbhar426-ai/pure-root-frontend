@@ -5,9 +5,9 @@ import '../../styles/ProductCard.css';
 
 const ProductCard = ({ product }) => {
   const navigate = useNavigate();
-  const API_BASE_URL = "http://localhost:5000";
+  const API_BASE_URL = "https://pure-root-backend.onrender.com";
 
-  // 🌿 NEW: Dynamic color and label based on Eco-Score
+  
   const getEcoDetails = (score) => {
     if (score >= 80) return { color: "#2d6a4f", label: "Eco-Warrior", icon: <FaLeaf /> };
     if (score >= 50) return { color: "#74c69d", label: "Sustainable", icon: <FaLeaf /> };

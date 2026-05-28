@@ -10,7 +10,7 @@ const ProductDetails = () => {
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
   
-  const API_BASE_URL = "http://localhost:5000";
+  const API_BASE_URL = "https://pure-root-backend.onrender.com";
 
   // 1. Helper: Correct Image Path Logic
   const getFullImagePath = (path) => {
@@ -131,7 +131,7 @@ const ProductDetails = () => {
 
           <div className="details-description">
             <h3>Product Story & Details</h3>
-            <p>{product.description || "Ye product local artisans dwara sustainabilty ko dhyan mein rakh kar banaya gaya hai."}</p>
+            <p>{product.description || "This Product is made by local artisans, keeping sustainability in mind."}</p>
           </div>
 
           <div className="details-actions">

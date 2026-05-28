@@ -8,7 +8,7 @@ export default function MyProducts() {
   const [products, setProducts] = useState([]);
   const [loading, setLoading] = useState(true);
   const navigate = useNavigate();
-  const API_BASE_URL = "http://localhost:5000";
+  const API_BASE_URL = "https://pure-root-backend.onrender.com";
   const OFFLINE_IMAGE = "/no-image-found.png"; 
 
   useEffect(() => {

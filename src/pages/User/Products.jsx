@@ -12,7 +12,7 @@ export default function Products() {
   const [userCoords, setUserCoords] = useState(null); // 🌿 Location state
 
   const navigate = useNavigate();
-  const API_BASE_URL = "http://localhost:5000";
+  const API_BASE_URL = "https://pure-root-backend.onrender.com";
   const DEFAULT_IMAGE = "/no-image-found.png";
 
   const categories = ["All", "Organic", "Handmade", "Eco-friendly", "Recycled", "Natural"];

@@ -22,7 +22,7 @@ export default function Profile() {
         setUser(res.data);
       } catch (err) {
         console.error("Profile fetch error", err);
-        // Agar token expired hai toh login pe bhejein
+        
         if (err.response?.status === 401) navigate("/login");
       } finally {
         setLoading(false);
@@ -33,7 +33,7 @@ export default function Profile() {
 
   const handleLogout = () => {
     localStorage.removeItem("token");
-    localStorage.removeItem("user"); // Agar aapne user data save kiya ho
+    localStorage.removeItem("user"); 
     navigate("/login");
   };
 

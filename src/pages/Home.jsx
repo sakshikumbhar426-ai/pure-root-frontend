@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import { Link, useNavigate } from "react-router-dom"; // useNavigate add kiya
+import { Link, useNavigate } from "react-router-dom"; 
 import { 
   FaLeaf, FaRecycle, FaHandHoldingHeart, FaArrowRight, 
   FaStore, FaSeedling, FaGlobeAmericas, FaShoppingBasket 
@@ -21,7 +21,7 @@ import "../styles/home.css";
 export default function Home() {
   const [featuredProducts, setFeaturedProducts] = useState([]);
   const navigate = useNavigate(); // Navigation ke liye
-  const API_BASE_URL = "http://localhost:5000";
+  const API_BASE_URL = "https://pure-root-backend.onrender.com";
 
   // Banner images remains the same
   const bannerImages = [
@@ -52,7 +52,7 @@ export default function Home() {
     { id: 'cat-gadgets', name: "Eco-Gadgets", icon: <FaLeaf />, class: "cat-4" }
   ];
 
-  // 🌿 Helper: Eco-Score Color Logic
+  //  Helper: Eco-Score Color Logic
   const getEcoColor = (score) => {
     if (score >= 80) return "#2d6a4f"; 
     if (score >= 50) return "#74c69d"; 
@@ -107,7 +107,7 @@ export default function Home() {
                 style={{ backgroundImage: `linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url(${slide.img})` }}
               >
                 <div className="hero-content" data-aos="zoom-out">
-                  <span className="hero-badge">🌿 100% Eco-Friendly</span>
+                  <span className="hero-badge"> 100% Eco-Friendly</span>
                   <h1>{slide.title}</h1>
                   <p>{slide.text}</p>
                   <div className="hero-actions">

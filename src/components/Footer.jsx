@@ -41,7 +41,7 @@ export default function Footer() {
             <h4>Get in Touch</h4>
             <p><FaEnvelope className="me-2" /> support@pureroot.com</p>
             <p><FaPhoneAlt className="me-2" /> +91 98765 43210</p>
-            <p><FaMapMarkerAlt className="me-2" /> Mumbai, Maharashtra, India</p>
+            <p><FaMapMarkerAlt className="me-2" /> Kolhapur, Maharashtra, India</p>
           </div>
 
           {/* 4. Newsletter */}

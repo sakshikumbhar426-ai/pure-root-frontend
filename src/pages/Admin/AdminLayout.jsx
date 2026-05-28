@@ -6,7 +6,7 @@ export default function AdminLayout() {
     <div className="admin-container" style={{ display: "flex" }}>
       <Sidebar />
       <div className="admin-content" style={{ flex: 1, padding: "20px" }}>
-        {/* Outlet hi wo jagah hai jahan Users, Products etc. load honge */}
+        
         <Outlet />
       </div>
     </div>
