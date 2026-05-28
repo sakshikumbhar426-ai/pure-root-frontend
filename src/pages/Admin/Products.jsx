@@ -47,7 +47,7 @@ const handleRemove = async (id) => {
             {products.map(p => (
               <tr key={p.product_id}>
                 <td>
-                  <img src={`https://pure-root-backend.onrender.com/${p.image}`} alt="product" width="50" />
+                  <img src={`https://pure-root-backend.onrender.com/api/${p.image}`} alt="product" width="50" />
                 </td>
                 {/* shop_name check karein kyunki controller mein wahi mapping hai */}
                 <td>{p.shop_name || p.product_name || "N/A"}</td> 

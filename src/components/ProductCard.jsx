@@ -5,7 +5,7 @@ import '../../styles/ProductCard.css';
 
 const ProductCard = ({ product }) => {
   const navigate = useNavigate();
-  const API_BASE_URL = "https://pure-root-backend.onrender.com";
+  const API_BASE_URL = "https://pure-root-backend.onrender.com/api";
 
   
   const getEcoDetails = (score) => {

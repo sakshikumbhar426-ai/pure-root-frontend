@@ -8,7 +8,7 @@ export default function Products() {
   const [products, setProducts] = useState([]);
   const [userCoords, setUserCoords] = useState(null);
   const navigate = useNavigate();
-  const API_BASE_URL = "https://pure-root-backend.onrender.com";
+  const API_BASE_URL = "https://pure-root-backend.onrender.com/api";
 
   useEffect(() => {
     if (navigator.geolocation) {

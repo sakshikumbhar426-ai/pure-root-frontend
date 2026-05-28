@@ -21,7 +21,7 @@ import "../styles/home.css";
 export default function Home() {
   const [featuredProducts, setFeaturedProducts] = useState([]);
   const navigate = useNavigate(); // Navigation ke liye
-  const API_BASE_URL = "https://pure-root-backend.onrender.com";
+  const API_BASE_URL = "https://pure-root-backend.onrender.com/api";
 
   // Banner images remains the same
   const bannerImages = [

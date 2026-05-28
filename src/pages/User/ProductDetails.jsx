@@ -10,7 +10,7 @@ const ProductDetails = () => {
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
   
-  const API_BASE_URL = "https://pure-root-backend.onrender.com";
+  const API_BASE_URL = "https://pure-root-backend.onrender.com/api";
 
   // 1. Helper: Correct Image Path Logic
   const getFullImagePath = (path) => {
